@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/DillonBritt/Documents/Lab_8/simulation/qsim
+Elab_8
+Z1 w1491584840
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+R0
+Z9 8Lab_8.vho
+Z10 FLab_8.vho
+l0
+L37
+VEGneMeRNWJIe3cdE2klHA0
+!s100 gmW>5`;fR5CYKN1lg^Z2=2
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1491584841
+!i10b 1
+Z13 !s108 1491584841.000000
+Z14 !s90 -work|work|Lab_8.vho|
+Z15 !s107 Lab_8.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 lab_8 0 22 EGneMeRNWJIe3cdE2klHA0
+l125
+L95
+VGCnAj]W?;;UFJg:lmZI[e0
+!s100 =C5R8>dKFAMf?OLHN69U:3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Elab_8_vhd_vec_tst
+Z18 w1491584838
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32
+VA5>fY>@kTOYGW4kY57UV12
+!s100 W<kEj^B]nGN8Ignl^JFz43
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Alab_8_arch
+R6
+R7
+Z23 DEx4 work 17 lab_8_vhd_vec_tst 0 22 A5>fY>@kTOYGW4kY57UV12
+l45
+L34
+Z24 VaS;W0@:70lGEVN`?FXZ_e2
+Z25 !s100 dM^ddjG6jA8;Ai82de[:>0
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

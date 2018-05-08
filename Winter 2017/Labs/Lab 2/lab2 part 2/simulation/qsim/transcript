@@ -1,0 +1,32 @@
+# do ALU.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:18:35 on Jan 19,2017
+# vlog -work work ALU.vo 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:18:35 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:18:35 on Jan 19,2017
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ALU_vlg_sample_tst
+# -- Compiling module ALU_vlg_check_tst
+# -- Compiling module ALU_vlg_vec_tst
+# 
+# Top level modules:
+# 	ALU_vlg_vec_tst
+# End time: 16:18:35 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "ALU.do" 
+# Start time: 16:18:35 on Jan 19,2017
+# Loading work.ALU_vlg_vec_tst
+# Loading work.ALU
+# Loading work.ALU_vlg_sample_tst
+# Loading work.ALU_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(710)
+#    Time: 1 us  Iteration: 0  Instance: /ALU_vlg_vec_tst/tb_out
+# End time: 16:18:35 on Jan 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

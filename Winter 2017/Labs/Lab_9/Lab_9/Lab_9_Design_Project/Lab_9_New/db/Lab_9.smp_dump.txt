@@ -1,0 +1,9 @@
+
+State Machine - |Top_file|midi_serial:midi|state
+Name state.send_byte3 state.send_byte2 state.send_byte1 state.startbit state.stopbit state.idle 
+state.idle 0 0 0 0 0 0 
+state.stopbit 0 0 0 0 1 1 
+state.startbit 0 0 0 1 0 1 
+state.send_byte1 0 0 1 0 0 1 
+state.send_byte2 0 1 0 0 0 1 
+state.send_byte3 1 0 0 0 0 1 

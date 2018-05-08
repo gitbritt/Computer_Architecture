@@ -1,0 +1,18 @@
+/*Dillon Britt
+Lab 7 part 6*/
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+Entity mips_control is
+Port(
+opcode					: In STD_Logic_Vector(5 downto 0);
+funct						: In STD_Logic_vector(5 downto 0);
+RegDst, ALUsrc			: OUT STD_LOGIC;
+Jump, Jal, JR			: OUT STD_LOGIC;
+Beq, Bne					: OUT STD_LOGIC;
+MemRead, MemWrite		: OUT STD_LOGIC;
+RegWrite, MemtoReg	: OUT STD_LOGIC;
+ALUControl				: OUT STD_LOGIC_VECTOR(3 downto 0);
+End mips_control;

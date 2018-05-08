@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="up3_pll_sim/up3_pll.vho" type="VHDL" />
+ <topLevel name="up3_pll" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

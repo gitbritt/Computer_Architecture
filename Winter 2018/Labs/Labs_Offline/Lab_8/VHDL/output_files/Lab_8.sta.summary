@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'slow_clock'
+Slack : -13.890
+TNS   : -11304.385
+
+Type  : Slow 1100mV 85C Model Setup 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -6.740
+TNS   : -26.551
+
+Type  : Slow 1100mV 85C Model Setup 'fast_clock'
+Slack : -1.928
+TNS   : -10.821
+
+Type  : Slow 1100mV 85C Model Hold 'slow_clock'
+Slack : -3.658
+TNS   : -1230.396
+
+Type  : Slow 1100mV 85C Model Hold 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.449
+TNS   : -8.264
+
+Type  : Slow 1100mV 85C Model Hold 'fast_clock'
+Slack : 1.047
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fast_clock'
+Slack : -3.166
+TNS   : -37.469
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.502
+TNS   : -41.574
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'slow_clock'
+Slack : -0.724
+TNS   : -1174.648
+
+Type  : Slow 1100mV 0C Model Setup 'slow_clock'
+Slack : -13.653
+TNS   : -11259.522
+
+Type  : Slow 1100mV 0C Model Setup 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -6.818
+TNS   : -26.396
+
+Type  : Slow 1100mV 0C Model Setup 'fast_clock'
+Slack : -1.758
+TNS   : -9.830
+
+Type  : Slow 1100mV 0C Model Hold 'slow_clock'
+Slack : -3.763
+TNS   : -1494.656
+
+Type  : Slow 1100mV 0C Model Hold 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.511
+TNS   : -8.597
+
+Type  : Slow 1100mV 0C Model Hold 'fast_clock'
+Slack : 0.852
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fast_clock'
+Slack : -3.166
+TNS   : -37.424
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.474
+TNS   : -40.969
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'slow_clock'
+Slack : -0.724
+TNS   : -1182.324
+
+Type  : Fast 1100mV 85C Model Setup 'slow_clock'
+Slack : -5.638
+TNS   : -4705.892
+
+Type  : Fast 1100mV 85C Model Setup 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.885
+TNS   : -11.163
+
+Type  : Fast 1100mV 85C Model Setup 'fast_clock'
+Slack : -0.497
+TNS   : -2.332
+
+Type  : Fast 1100mV 85C Model Hold 'slow_clock'
+Slack : -1.536
+TNS   : -463.948
+
+Type  : Fast 1100mV 85C Model Hold 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -1.175
+TNS   : -3.825
+
+Type  : Fast 1100mV 85C Model Hold 'fast_clock'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fast_clock'
+Slack : -2.174
+TNS   : -24.658
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -0.919
+TNS   : -11.160
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'slow_clock'
+Slack : -0.108
+TNS   : -108.561
+
+Type  : Fast 1100mV 0C Model Setup 'slow_clock'
+Slack : -4.947
+TNS   : -4124.082
+
+Type  : Fast 1100mV 0C Model Setup 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -2.517
+TNS   : -9.741
+
+Type  : Fast 1100mV 0C Model Setup 'fast_clock'
+Slack : -0.307
+TNS   : -1.312
+
+Type  : Fast 1100mV 0C Model Hold 'slow_clock'
+Slack : -1.505
+TNS   : -537.293
+
+Type  : Fast 1100mV 0C Model Hold 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -1.051
+TNS   : -3.447
+
+Type  : Fast 1100mV 0C Model Hold 'fast_clock'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fast_clock'
+Slack : -2.174
+TNS   : -24.659
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ram_block1a0~PORT_A_WRITE_ENABLE_REG'
+Slack : -0.771
+TNS   : -9.031
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'slow_clock'
+Slack : -0.105
+TNS   : -106.518
+
+------------------------------------------------------------

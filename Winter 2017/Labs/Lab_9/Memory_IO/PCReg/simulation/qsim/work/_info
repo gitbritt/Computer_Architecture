@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PCReg/simulation/qsim
+vPCReg
+Z1 !s110 1489690313
+!i10b 1
+!s100 X0C?D`CCaD4E;K5e:KYn_2
+Io1hfF=<f6]fAAd0VFF3DN3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1489690313
+8PCReg.vo
+FPCReg.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1489690313.688000
+!s107 PCReg.vo|
+!s90 -work|work|PCReg.vo|
+!i113 1
+Z4 o-work work
+n@p@c@reg
+vPCReg_vlg_check_tst
+R1
+!i10b 1
+!s100 kJ_J1EGUKD6<ITVd6O@ag2
+Ibz[HX2679PdoQNV9h6I]i2
+R2
+R0
+Z5 w1489690310
+Z6 8Waveform1.vwf.vt
+Z7 FWaveform1.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1489690313.750000
+Z9 !s107 Waveform1.vwf.vt|
+Z10 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R4
+n@p@c@reg_vlg_check_tst
+vPCReg_vlg_sample_tst
+R1
+!i10b 1
+!s100 YcHdmTOeFkjS0]4OTTRXW3
+I<WM:TIkjlDT3i:>6c8D8I2
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@p@c@reg_vlg_sample_tst
+vPCReg_vlg_vec_tst
+R1
+!i10b 1
+!s100 nL>QAflZ4UgYU9PPO2C5g3
+I7DZUc9:gdl0>g3V5D1UXm1
+R2
+R0
+R5
+R6
+R7
+L0 714
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@p@c@reg_vlg_vec_tst

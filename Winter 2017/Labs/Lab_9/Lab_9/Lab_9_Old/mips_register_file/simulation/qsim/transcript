@@ -1,0 +1,51 @@
+# do mips_register_file.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:23:23 on Apr 06,2017
+# vlog -work work mips_register_file.vo 
+# -- Compiling module mips_register_file
+# 
+# Top level modules:
+# 	mips_register_file
+# End time: 14:23:23 on Apr 06,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:23:23 on Apr 06,2017
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module mips_register_file_vlg_sample_tst
+# -- Compiling module mips_register_file_vlg_check_tst
+# -- Compiling module mips_register_file_vlg_vec_tst
+# 
+# Top level modules:
+# 	mips_register_file_vlg_vec_tst
+# End time: 14:23:24 on Apr 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "mips_register_file.do" 
+# Start time: 14:23:24 on Apr 06,2017
+# Loading work.mips_register_file_vlg_vec_tst
+# Loading work.mips_register_file
+# Loading altera_ver.dffeas
+# Loading work.mips_register_file_vlg_sample_tst
+# Loading work.mips_register_file_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 13543 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ERROR! Vector Mismatch for output port read_data1[1] :: @time = 28160000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000110
+# ERROR! Vector Mismatch for output port read_data1[2] :: @time = 28160000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000110
+# ERROR! Vector Mismatch for output port read_data2[0] :: @time = 40000000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000111
+# ERROR! Vector Mismatch for output port read_data2[1] :: @time = 40000000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000111
+# ERROR! Vector Mismatch for output port read_data2[2] :: @time = 40000000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000111
+#           5 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(1366)
+#    Time: 100 us  Iteration: 0  Instance: /mips_register_file_vlg_vec_tst/tb_out
+# End time: 14:23:26 on Apr 06,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

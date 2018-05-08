@@ -1,0 +1,25 @@
+
+
+C:/Users/DillonBritt/Documents/Lab_8/Data_memory.vhd
+
+Apr 06 03PM:33:09>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+Data_memory.v
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
+
+C:/Users/DillonBritt/Documents/Lab_8/Data_Memory.vhd
+
+Apr 06 03PM:34:16>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+Data_memory.v
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

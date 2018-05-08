@@ -1,0 +1,36 @@
+# do memory_mapped.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 02:46:06 on May 04,2017
+# vlog -work work memory_mapped.vo 
+# -- Compiling module memory_mapped
+# 
+# Top level modules:
+# 	memory_mapped
+# End time: 02:46:06 on May 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 02:46:06 on May 04,2017
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module memory_mapped_vlg_sample_tst
+# -- Compiling module memory_mapped_vlg_check_tst
+# -- Compiling module memory_mapped_vlg_vec_tst
+# 
+# Top level modules:
+# 	memory_mapped_vlg_vec_tst
+# End time: 02:46:06 on May 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "memory_mapped.do" 
+# Start time: 02:46:06 on May 04,2017
+# Loading work.memory_mapped_vlg_vec_tst
+# Loading work.memory_mapped
+# Loading altera_ver.dffeas
+# Loading work.memory_mapped_vlg_sample_tst
+# Loading work.memory_mapped_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(1886)
+#    Time: 1 us  Iteration: 0  Instance: /memory_mapped_vlg_vec_tst/tb_out
+# End time: 02:46:06 on May 04,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

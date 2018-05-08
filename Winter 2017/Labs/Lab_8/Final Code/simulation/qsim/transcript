@@ -1,0 +1,431 @@
+# do mips.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:19 on May 02,2017
+# vlog -work work mips.vo 
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# End time: 16:03:20 on May 02,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:20 on May 02,2017
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module mips_vlg_sample_tst
+# -- Compiling module mips_vlg_check_tst
+# -- Compiling module mips_vlg_vec_tst
+# 
+# Top level modules:
+# 	mips_vlg_vec_tst
+# End time: 16:03:20 on May 02,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "mips.do" 
+# Start time: 16:03:20 on May 02,2017
+# Loading work.mips_vlg_vec_tst
+# Loading work.mips
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# Loading altera_ver.dffeas
+# Loading work.mips_vlg_sample_tst
+# Loading work.mips_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 22307 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ERROR! Vector Mismatch for output port instruction_out[0] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100000000010000000000000000101
+# ERROR! Vector Mismatch for output port instruction_out[2] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100000000010000000000000000101
+# ERROR! Vector Mismatch for output port instruction_out[19] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100000000010000000000000000101
+# ERROR! Vector Mismatch for output port instruction_out[29] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100000000010000000000000000101
+# ERROR! Vector Mismatch for output port PC_out[22] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000000000000
+# ERROR! Vector Mismatch for output port Read_data2_out[0] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Read_data2_out[2] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Read_reg2_out[3] :: @time = 100000.000 ps
+#      Expected value = 00000
+#      Real value = 01000
+# ERROR! Vector Mismatch for output port Write_data_out[0] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Write_data_out[2] :: @time = 100000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Write_reg_out[3] :: @time = 100000.000 ps
+#      Expected value = 00000
+#      Real value = 01000
+# ERROR! Vector Mismatch for output port PC_out[2] :: @time = 550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000000000100
+# ERROR! Vector Mismatch for output port instruction_out[16] :: @time = 600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100000000010010000000000000101
+# ERROR! Vector Mismatch for output port Read_reg2_out[0] :: @time = 600000.000 ps
+#      Expected value = 00000
+#      Real value = 01001
+# ERROR! Vector Mismatch for output port Write_reg_out[0] :: @time = 600000.000 ps
+#      Expected value = 00000
+#      Real value = 01001
+# ERROR! Vector Mismatch for output port PC_out[3] :: @time = 1550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000000001000
+# ERROR! Vector Mismatch for output port instruction_out[5] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010101000000100001
+# ERROR! Vector Mismatch for output port instruction_out[12] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010101000000100001
+# ERROR! Vector Mismatch for output port instruction_out[14] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010101000000100001
+# ERROR! Vector Mismatch for output port instruction_out[24] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010101000000100001
+# ERROR! Vector Mismatch for output port Read_data1_out[0] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Read_data1_out[2] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000000101
+# ERROR! Vector Mismatch for output port Read_reg1_out[3] :: @time = 1600000.000 ps
+#      Expected value = 00000
+#      Real value = 01000
+# ERROR! Vector Mismatch for output port Write_data_out[1] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001010
+# ERROR! Vector Mismatch for output port Write_data_out[3] :: @time = 1600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001010
+# ERROR! Vector Mismatch for output port Write_reg_out[1] :: @time = 1600000.000 ps
+#      Expected value = 00000
+#      Real value = 01010
+# ERROR! Vector Mismatch for output port instruction_out[17] :: @time = 2600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100101010010110000000000000101
+# ERROR! Vector Mismatch for output port instruction_out[22] :: @time = 2600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100101010010110000000000000101
+# ERROR! Vector Mismatch for output port instruction_out[26] :: @time = 2600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00100101010010110000000000000101
+# ERROR! Vector Mismatch for output port Read_data1_out[1] :: @time = 2600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001010
+# ERROR! Vector Mismatch for output port Read_data1_out[3] :: @time = 2600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001010
+# ERROR! Vector Mismatch for output port Read_reg1_out[1] :: @time = 2600000.000 ps
+#      Expected value = 00000
+#      Real value = 01010
+# ERROR! Vector Mismatch for output port Read_reg2_out[1] :: @time = 2600000.000 ps
+#      Expected value = 00000
+#      Real value = 01011
+# ERROR! Vector Mismatch for output port PC_out[4] :: @time = 3550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000000010000
+# ERROR! Vector Mismatch for output port instruction_out[11] :: @time = 3600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010100100000100100
+# ERROR! Vector Mismatch for output port instruction_out[1] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00110001001010100000000000001111
+# ERROR! Vector Mismatch for output port instruction_out[3] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00110001001010100000000000001111
+# ERROR! Vector Mismatch for output port instruction_out[21] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00110001001010100000000000001111
+# ERROR! Vector Mismatch for output port instruction_out[28] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00110001001010100000000000001111
+# ERROR! Vector Mismatch for output port Read_data2_out[1] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001111
+# ERROR! Vector Mismatch for output port Read_data2_out[3] :: @time = 4600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000000001111
+# ERROR! Vector Mismatch for output port Read_reg1_out[0] :: @time = 4600000.000 ps
+#      Expected value = 00000
+#      Real value = 01001
+# ERROR! Vector Mismatch for output port instruction_out[13] :: @time = 5600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000001000010010111000000100010
+# ERROR! Vector Mismatch for output port Write_reg_out[2] :: @time = 5600000.000 ps
+#      Expected value = 00000
+#      Real value = 01110
+# ERROR! Vector Mismatch for output port instruction_out[27] :: @time = 6600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00111100000000010000000000000000
+# ERROR! Vector Mismatch for output port PC_out[5] :: @time = 7550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000000100000
+# ERROR! Vector Mismatch for output port Write_data_out[4] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[5] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[6] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[7] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[8] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[9] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[10] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[11] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[12] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[13] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[14] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[15] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[16] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[17] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[18] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[19] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[20] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[21] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[22] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[23] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[24] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[25] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[26] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[27] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[28] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[29] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[30] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port Write_data_out[31] :: @time = 8600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111111111011
+# ERROR! Vector Mismatch for output port instruction_out[20] :: @time = 11600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00001000000100000000000000001111
+# ERROR! Vector Mismatch for output port Read_reg2_out[4] :: @time = 11600000.000 ps
+#      Expected value = 00000
+#      Real value = 10000
+# ERROR! Vector Mismatch for output port Write_reg_out[4] :: @time = 11600000.000 ps
+#      Expected value = 00000
+#      Real value = 10000
+# ERROR! Vector Mismatch for output port PC_out[6] :: @time = 13550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000001000000
+# ERROR! Vector Mismatch for output port instruction_out[4] :: @time = 18600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00001000000100000000000000011001
+# ERROR! Vector Mismatch for output port PC_out[7] :: @time = 25550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000010000000
+# ERROR! Vector Mismatch for output port instruction_out[6] :: @time = 25600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00101001011011000000000001100100
+# ERROR! Vector Mismatch for output port instruction_out[18] :: @time = 25600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00101001011011000000000001100100
+# ERROR! Vector Mismatch for output port Read_data2_out[5] :: @time = 25600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port Read_data2_out[6] :: @time = 25600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000000000000000001100100
+# ERROR! Vector Mismatch for output port Read_reg2_out[2] :: @time = 25600000.000 ps
+#      Expected value = 00000
+#      Real value = 01100
+# ERROR! Vector Mismatch for output port instruction_out[23] :: @time = 30600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000011111000000000000000001000
+# ERROR! Vector Mismatch for output port instruction_out[25] :: @time = 30600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000011111000000000000000001000
+# ERROR! Vector Mismatch for output port Read_data1_out[4] :: @time = 30600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000010010100
+# ERROR! Vector Mismatch for output port Read_data1_out[7] :: @time = 30600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000010010100
+# ERROR! Vector Mismatch for output port Read_data1_out[22] :: @time = 30600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000010000000000000010010100
+# ERROR! Vector Mismatch for output port Read_reg1_out[2] :: @time = 30600000.000 ps
+#      Expected value = 00000
+#      Real value = 11111
+# ERROR! Vector Mismatch for output port Read_reg1_out[4] :: @time = 30600000.000 ps
+#      Expected value = 00000
+#      Real value = 11111
+# ERROR! Vector Mismatch for output port instruction_out[7] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port instruction_out[8] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port instruction_out[9] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port instruction_out[10] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port instruction_out[15] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port instruction_out[31] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 10101100000011101111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[4] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[7] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[8] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[9] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[10] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[11] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[12] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[13] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[14] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[15] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[16] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[17] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[18] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[19] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[20] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[21] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[22] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[23] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[24] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[25] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[26] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[27] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[28] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[29] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[30] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data2_out[31] :: @time = 35600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 11111111111111111111111110011100
+# ERROR! Vector Mismatch for output port Read_data1_out[18] :: @time = 44600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000101000000000000000000
+# ERROR! Vector Mismatch for output port Read_data1_out[20] :: @time = 44600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000101000000000000000000
+# ERROR! Vector Mismatch for output port Read_data1_out[17] :: @time = 45550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000010100000000000000000
+# ERROR! Vector Mismatch for output port Read_data1_out[19] :: @time = 45550000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000010100000000000000000
+# ERROR! Vector Mismatch for output port Read_data1_out[16] :: @time = 46600000.000 ps
+#      Expected value = 00000000000000000000000000000000
+#      Real value = 00000000000001010000000000000000
+#         129 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(3515)
+#    Time: 100 us  Iteration: 0  Instance: /mips_vlg_vec_tst/tb_out
+# End time: 16:03:29 on May 02,2017, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 1

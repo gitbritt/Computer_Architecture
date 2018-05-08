@@ -1,0 +1,10 @@
+Arithmetic Operations
+---------------------
+ADD
+
+Register File
+-------------
+32 General purpose registers
+Basic unit of Data : Word
+0 = $zero
+2 - 3 = $v0 

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dW:/mips_register_file/simulation/qsim
+vmips_register_file
+!s110 1491503003
+!i10b 1
+!s100 2U1FoZG9z9LWjzkTK6R[i0
+IH8eZ]PcPH4J9glRCH;a:82
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1491503005
+8mips_register_file.vo
+Fmips_register_file.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1491503003.277000
+!s107 mips_register_file.vo|
+!s90 -work|work|mips_register_file.vo|
+!i113 1
+Z3 o-work work
+vmips_register_file_vlg_check_tst
+Z4 !s110 1491503004
+!i10b 1
+!s100 h;YGzKk6To>;elDZjPG770
+IZ?=a0BefiFkPEHEMnN_eA2
+R1
+R0
+Z5 w1491503002
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 70
+R2
+r1
+!s85 0
+31
+Z8 !s108 1491503003.933000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vmips_register_file_vlg_sample_tst
+R4
+!i10b 1
+!s100 ;MFKnCGVc@alX6>z6HTmg3
+I4Sh6TBZUkcdkW=[ldoDbM3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vmips_register_file_vlg_vec_tst
+R4
+!i10b 1
+!s100 Ca=2]^1TEzJ0g4I9TRz4W0
+IRZmEZkRjeYVBz2fX9M2XQ3
+R1
+R0
+R5
+R6
+R7
+L0 1370
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

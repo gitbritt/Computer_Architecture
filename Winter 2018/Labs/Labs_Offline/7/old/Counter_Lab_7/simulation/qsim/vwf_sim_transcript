@@ -1,0 +1,371 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/17.1/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Counter -c Counter --vector_source="C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/Waveform5.vwf" --testbench_file="C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/Waveform5.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed Apr 11 17:34:58 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Counter -c Counter --vector_source=C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/Waveform5.vwf --testbench_file=C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/Waveform5.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+0]" in design
+
+riting test bench files
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/" Counter -c Counter
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed Apr 11 17:35:01 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/ Counter -c Counter
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Counter.vho in folder "C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 643 megabytes
+    Info: Processing ended: Wed Apr 11 17:35:04 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/Counter.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do Counter.do
+
+Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do Counter.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:35:06 on Apr 11,2018
+# vcom -work work Counter.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity mips_control
+
+# -- Compiling architecture structure of mips_control
+
+# End time: 17:35:06 on Apr 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:35:06 on Apr 11,2018
+# vcom -work work Waveform5.vwf.vht 
+
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mips_control_vhd_vec_tst
+# -- Compiling architecture mips_control_arch of mips_control_vhd_vec_tst
+
+# End time: 17:35:06 on Apr 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mips_alu_vhd_vec_tst 
+# Start time: 17:35:07 on Apr 11,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mips_alu_vhd_vec_tst(mips_alu_arch)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.mips_alu(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# ** Warning: Design size of 77365 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#32
+
+# End time: 17:35:08 on Apr 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/Waveform5.vwf...
+
+Reading C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/Counter.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: ALU_Result[31] - signal not found in VCD.
+
+Warning: ALU_Result[30] - signal not found in VCD.
+
+Warning: ALU_Result[29] - signal not found in VCD.
+
+Warning: ALU_Result[28] - signal not found in VCD.
+
+Warning: ALU_Result[27] - signal not found in VCD.
+
+Warning: ALU_Result[26] - signal not found in VCD.
+
+Warning: ALU_Result[25] - signal not found in VCD.
+
+Warning: ALU_Result[24] - signal not found in VCD.
+
+Warning: ALU_Result[23] - signal not found in VCD.
+
+Warning: ALU_Result[22] - signal not found in VCD.
+
+Warning: ALU_Result[21] - signal not found in VCD.
+
+Warning: ALU_Result[20] - signal not found in VCD.
+
+Warning: ALU_Result[19] - signal not found in VCD.
+
+Warning: ALU_Result[18] - signal not found in VCD.
+
+Warning: ALU_Result[17] - signal not found in VCD.
+
+Warning: ALU_Result[16] - signal not found in VCD.
+
+Warning: ALU_Result[15] - signal not found in VCD.
+
+Warning: ALU_Result[14] - signal not found in VCD.
+
+Warning: ALU_Result[13] - signal not found in VCD.
+
+Warning: ALU_Result[12] - signal not found in VCD.
+
+Warning: ALU_Result[11] - signal not found in VCD.
+
+Warning: ALU_Result[10] - signal not found in VCD.
+
+Warning: ALU_Result[9] - signal not found in VCD.
+
+Warning: ALU_Result[8] - signal not found in VCD.
+
+Warning: ALU_Result[7] - signal not found in VCD.
+
+Warning: ALU_Result[6] - signal not found in VCD.
+
+Warning: ALU_Result[5] - signal not found in VCD.
+
+Warning: ALU_Result[4] - signal not found in VCD.
+
+Warning: ALU_Result[3] - signal not found in VCD.
+
+Warning: ALU_Result[2] - signal not found in VCD.
+
+Warning: ALU_Result[1] - signal not found in VCD.
+
+Warning: ALU_Result[0] - signal not found in VCD.
+
+Warning: ALUControl[3] - signal not found in VCD.
+
+Warning: ALUControl[2] - signal not found in VCD.
+
+Warning: ALUControl[1] - signal not found in VCD.
+
+Warning: ALUControl[0] - signal not found in VCD.
+
+Warning: inputA[31] - signal not found in VCD.
+
+Warning: inputA[30] - signal not found in VCD.
+
+Warning: inputA[29] - signal not found in VCD.
+
+Warning: inputA[28] - signal not found in VCD.
+
+Warning: inputA[27] - signal not found in VCD.
+
+Warning: inputA[26] - signal not found in VCD.
+
+Warning: inputA[25] - signal not found in VCD.
+
+Warning: inputA[24] - signal not found in VCD.
+
+Warning: inputA[23] - signal not found in VCD.
+
+Warning: inputA[22] - signal not found in VCD.
+
+Warning: inputA[21] - signal not found in VCD.
+
+Warning: inputA[20] - signal not found in VCD.
+
+Warning: inputA[19] - signal not found in VCD.
+
+Warning: inputA[18] - signal not found in VCD.
+
+Warning: inputA[17] - signal not found in VCD.
+
+Warning: inputA[16] - signal not found in VCD.
+
+Warning: inputA[15] - signal not found in VCD.
+
+Warning: inputA[14] - signal not found in VCD.
+
+Warning: inputA[13] - signal not found in VCD.
+
+Warning: inputA[12] - signal not found in VCD.
+
+Warning: inputA[11] - signal not found in VCD.
+
+Warning: inputA[10] - signal not found in VCD.
+
+Warning: inputA[9] - signal not found in VCD.
+
+Warning: inputA[8] - signal not found in VCD.
+
+Warning: inputA[7] - signal not found in VCD.
+
+Warning: inputA[6] - signal not found in VCD.
+
+Warning: inputA[5] - signal not found in VCD.
+
+Warning: inputA[4] - signal not found in VCD.
+
+Warning: inputA[3] - signal not found in VCD.
+
+Warning: inputA[2] - signal not found in VCD.
+
+Warning: inputA[1] - signal not found in VCD.
+
+Warning: inputA[0] - signal not found in VCD.
+
+Warning: inputB[31] - signal not found in VCD.
+
+Warning: inputB[30] - signal not found in VCD.
+
+Warning: inputB[29] - signal not found in VCD.
+
+Warning: inputB[28] - signal not found in VCD.
+
+Warning: inputB[27] - signal not found in VCD.
+
+Warning: inputB[26] - signal not found in VCD.
+
+Warning: inputB[25] - signal not found in VCD.
+
+Warning: inputB[24] - signal not found in VCD.
+
+Warning: inputB[23] - signal not found in VCD.
+
+Warning: inputB[22] - signal not found in VCD.
+
+Warning: inputB[21] - signal not found in VCD.
+
+Warning: inputB[20] - signal not found in VCD.
+
+Warning: inputB[19] - signal not found in VCD.
+
+Warning: inputB[18] - signal not found in VCD.
+
+Warning: inputB[17] - signal not found in VCD.
+
+Warning: inputB[16] - signal not found in VCD.
+
+Warning: inputB[15] - signal not found in VCD.
+
+Warning: inputB[14] - signal not found in VCD.
+
+Warning: inputB[13] - signal not found in VCD.
+
+Warning: inputB[12] - signal not found in VCD.
+
+Warning: inputB[11] - signal not found in VCD.
+
+Warning: inputB[10] - signal not found in VCD.
+
+Warning: inputB[9] - signal not found in VCD.
+
+Warning: inputB[8] - signal not found in VCD.
+
+Warning: inputB[7] - signal not found in VCD.
+
+Warning: inputB[6] - signal not found in VCD.
+
+Warning: inputB[5] - signal not found in VCD.
+
+Warning: inputB[4] - signal not found in VCD.
+
+Warning: inputB[3] - signal not found in VCD.
+
+Warning: inputB[2] - signal not found in VCD.
+
+Warning: inputB[1] - signal not found in VCD.
+
+Warning: inputB[0] - signal not found in VCD.
+
+Warning: shamt[4] - signal not found in VCD.
+
+Warning: shamt[3] - signal not found in VCD.
+
+Warning: shamt[2] - signal not found in VCD.
+
+Warning: shamt[1] - signal not found in VCD.
+
+Warning: shamt[0] - signal not found in VCD.
+
+Warning: Zero - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/DillonBritt/Documents/Labs_Offline/7/old/Counter_Lab_7/simulation/qsim/Counter_20180411173509.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

@@ -1,0 +1,339 @@
+$comment
+	File created using the following command:
+		vcd file PCReg.msim.vcd -direction
+$end
+$date
+	Thu Mar 16 14:51:54 2017
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module PCReg_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 32 " NextPC [31:0] $end
+$var reg 1 # reset $end
+$var wire 1 $ PC [31] $end
+$var wire 1 % PC [30] $end
+$var wire 1 & PC [29] $end
+$var wire 1 ' PC [28] $end
+$var wire 1 ( PC [27] $end
+$var wire 1 ) PC [26] $end
+$var wire 1 * PC [25] $end
+$var wire 1 + PC [24] $end
+$var wire 1 , PC [23] $end
+$var wire 1 - PC [22] $end
+$var wire 1 . PC [21] $end
+$var wire 1 / PC [20] $end
+$var wire 1 0 PC [19] $end
+$var wire 1 1 PC [18] $end
+$var wire 1 2 PC [17] $end
+$var wire 1 3 PC [16] $end
+$var wire 1 4 PC [15] $end
+$var wire 1 5 PC [14] $end
+$var wire 1 6 PC [13] $end
+$var wire 1 7 PC [12] $end
+$var wire 1 8 PC [11] $end
+$var wire 1 9 PC [10] $end
+$var wire 1 : PC [9] $end
+$var wire 1 ; PC [8] $end
+$var wire 1 < PC [7] $end
+$var wire 1 = PC [6] $end
+$var wire 1 > PC [5] $end
+$var wire 1 ? PC [4] $end
+$var wire 1 @ PC [3] $end
+$var wire 1 A PC [2] $end
+$var wire 1 B PC [1] $end
+$var wire 1 C PC [0] $end
+$var wire 1 D sampler $end
+
+$scope module i1 $end
+$var wire 1 E gnd $end
+$var wire 1 F vcc $end
+$var wire 1 G unknown $end
+$var tri1 1 H devclrn $end
+$var tri1 1 I devpor $end
+$var tri1 1 J devoe $end
+$var wire 1 K ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 L CLK~input_o $end
+$var wire 1 M CLK~inputCLKENA0_outclk $end
+$var wire 1 N NextPC[0]~input_o $end
+$var wire 1 O reset~input_o $end
+$var wire 1 P PC[0]~reg0_q $end
+$var wire 1 Q NextPC[1]~input_o $end
+$var wire 1 R PC[1]~reg0_q $end
+$var wire 1 S NextPC[2]~input_o $end
+$var wire 1 T PC[2]~reg0_q $end
+$var wire 1 U NextPC[3]~input_o $end
+$var wire 1 V PC[3]~reg0feeder_combout $end
+$var wire 1 W PC[3]~reg0_q $end
+$var wire 1 X NextPC[4]~input_o $end
+$var wire 1 Y PC[4]~reg0feeder_combout $end
+$var wire 1 Z PC[4]~reg0_q $end
+$var wire 1 [ NextPC[5]~input_o $end
+$var wire 1 \ PC[5]~reg0feeder_combout $end
+$var wire 1 ] PC[5]~reg0_q $end
+$var wire 1 ^ NextPC[6]~input_o $end
+$var wire 1 _ PC[6]~reg0feeder_combout $end
+$var wire 1 ` PC[6]~reg0_q $end
+$var wire 1 a NextPC[7]~input_o $end
+$var wire 1 b PC[7]~reg0feeder_combout $end
+$var wire 1 c PC[7]~reg0_q $end
+$var wire 1 d NextPC[8]~input_o $end
+$var wire 1 e PC[8]~reg0feeder_combout $end
+$var wire 1 f PC[8]~reg0_q $end
+$var wire 1 g NextPC[9]~input_o $end
+$var wire 1 h PC[9]~reg0_q $end
+$var wire 1 i NextPC[10]~input_o $end
+$var wire 1 j PC[10]~reg0feeder_combout $end
+$var wire 1 k PC[10]~reg0_q $end
+$var wire 1 l NextPC[11]~input_o $end
+$var wire 1 m PC[11]~reg0feeder_combout $end
+$var wire 1 n PC[11]~reg0_q $end
+$var wire 1 o NextPC[12]~input_o $end
+$var wire 1 p PC[12]~reg0feeder_combout $end
+$var wire 1 q PC[12]~reg0_q $end
+$var wire 1 r NextPC[13]~input_o $end
+$var wire 1 s PC[13]~reg0feeder_combout $end
+$var wire 1 t PC[13]~reg0_q $end
+$var wire 1 u NextPC[14]~input_o $end
+$var wire 1 v PC[14]~reg0feeder_combout $end
+$var wire 1 w PC[14]~reg0_q $end
+$var wire 1 x NextPC[15]~input_o $end
+$var wire 1 y PC[15]~reg0_q $end
+$var wire 1 z NextPC[16]~input_o $end
+$var wire 1 { PC[16]~reg0feeder_combout $end
+$var wire 1 | PC[16]~reg0_q $end
+$var wire 1 } NextPC[17]~input_o $end
+$var wire 1 ~ PC[17]~reg0_q $end
+$var wire 1 !! NextPC[18]~input_o $end
+$var wire 1 "! PC[18]~reg0feeder_combout $end
+$var wire 1 #! PC[18]~reg0_q $end
+$var wire 1 $! NextPC[19]~input_o $end
+$var wire 1 %! PC[19]~reg0_q $end
+$var wire 1 &! NextPC[20]~input_o $end
+$var wire 1 '! PC[20]~reg0feeder_combout $end
+$var wire 1 (! PC[20]~reg0_q $end
+$var wire 1 )! NextPC[21]~input_o $end
+$var wire 1 *! PC[21]~reg0_q $end
+$var wire 1 +! NextPC[22]~input_o $end
+$var wire 1 ,! PC[22]~0_combout $end
+$var wire 1 -! PC[22]~reg0_q $end
+$var wire 1 .! NextPC[23]~input_o $end
+$var wire 1 /! PC[23]~reg0feeder_combout $end
+$var wire 1 0! PC[23]~reg0_q $end
+$var wire 1 1! NextPC[24]~input_o $end
+$var wire 1 2! PC[24]~reg0_q $end
+$var wire 1 3! NextPC[25]~input_o $end
+$var wire 1 4! PC[25]~reg0_q $end
+$var wire 1 5! NextPC[26]~input_o $end
+$var wire 1 6! PC[26]~reg0feeder_combout $end
+$var wire 1 7! PC[26]~reg0_q $end
+$var wire 1 8! NextPC[27]~input_o $end
+$var wire 1 9! PC[27]~reg0feeder_combout $end
+$var wire 1 :! PC[27]~reg0_q $end
+$var wire 1 ;! NextPC[28]~input_o $end
+$var wire 1 <! PC[28]~reg0_q $end
+$var wire 1 =! NextPC[29]~input_o $end
+$var wire 1 >! PC[29]~reg0_q $end
+$var wire 1 ?! NextPC[30]~input_o $end
+$var wire 1 @! PC[30]~reg0feeder_combout $end
+$var wire 1 A! PC[30]~reg0_q $end
+$var wire 1 B! NextPC[31]~input_o $end
+$var wire 1 C! PC[31]~reg0feeder_combout $end
+$var wire 1 D! PC[31]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+xD
+0E
+1F
+xG
+1H
+1I
+1J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+1,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+$end
+#15000
+1!
+1L
+0D
+1M
+#20000
+1#
+b100 "
+1O
+1S
+1D
+#30000
+0!
+0L
+0D
+0M
+#45000
+1!
+1L
+1D
+1M
+1-!
+1T
+1A
+0-
+#50000
+b1100 "
+b1000 "
+0S
+1U
+0D
+1V
+#60000
+0!
+0L
+1D
+0M
+#75000
+1!
+1L
+0D
+1M
+1W
+0T
+0A
+1@
+#80000
+b1100 "
+1S
+1D
+#90000
+0!
+0L
+0D
+0M
+#100000

@@ -1,0 +1,27 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.STD_LOGIC_ARITH.all;
+USE ieee.STD_LOGIC_UNSIGNED.all;
+
+ENTITY PCReg IS
+	PORT (CLK 	 :IN STD_LOGIC;
+			NextPC :IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			reset	 :IN STD_LOGIC;
+			PC	 :OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+			);
+	END PCReg; 
+
+ARCHITECTURE Behavior OF PCReg IS
+
+BEGIN 
+
+	PROCESS (CLK, reset)
+	BEGIN
+		IF reset = '0' THEN
+			PC <= X"00400000";
+		ELSIF RISING_EDGE (CLK) THEN 
+			PC <= NextPC;
+		END IF;
+	END PROCESS;
+END Behavior;
+	

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/unsaved_buttons.v"
+   type="VERILOG"
+   library="buttons" />
+ <file path="simulation/unsaved.vhd" type="VHDL" />
+ <topLevel name="unsaved" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

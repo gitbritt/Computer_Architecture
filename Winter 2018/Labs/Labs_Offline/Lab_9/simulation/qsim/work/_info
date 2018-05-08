@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/dillonbritt/Desktop/Updated/simulation/qsim
+vmips
+Z0 !s110 1494175566
+!i10b 1
+!s100 [BfCNXO=FA;@4zIJ=dMU_3
+I2SzafIVCN18f]ERi]JnXO0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/DillonBritt/Desktop/Memory_IO/simulation/qsim
+w1494175564
+8mips.vo
+Fmips.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1494175565.918000
+!s107 mips.vo|
+!s90 -work|work|mips.vo|
+!i113 1
+Z4 o-work work
+vmips_vlg_check_tst
+R0
+!i10b 1
+!s100 YUL]3i5F<V]hc98iJ7dzd2
+IA2ecA0:zM?YMQloPUz<z?2
+R1
+R2
+Z5 w1494175560
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 66
+R3
+r1
+!s85 0
+31
+Z8 !s108 1494175566.749000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vmips_vlg_sample_tst
+R0
+!i10b 1
+!s100 n78MgjVA1ZQ7:^aO2Ig2@1
+IZdb:eiZ^YbmZO8:QA5Dfz2
+R1
+R2
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vmips_vlg_vec_tst
+R0
+!i10b 1
+!s100 U6mDFAG7=bI90VI`2b32Z2
+IB:A?O;W6k^=JoHOVPjmjM3
+R1
+R2
+R5
+R6
+R7
+L0 3827
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

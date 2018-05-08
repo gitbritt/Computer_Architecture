@@ -1,0 +1,32 @@
+#Dillon Britt
+#For Sum part 1 (Part 3 )
+.globl main
+
+ main:
+
+addi $s0, $zero, 0 # int i = 0
+addi $s1, $zero, 0 # int sum = 0
+
+loop:
+	bge $s0,10,exit #for(i; i< 10; 
+	jal check_odd_even
+	if_is_even: beq $v0, 0, continue
+		add $s1, $s1, $s0
+		j continue
+	
+	continue:
+	addi $s0,$s0,1 # i++)
+
+   j loop  
+
+check_odd_even:
+move $t0, $a0
+divu $t0, $t0, 2
+mfhi $t0
+add $t1, $zero, 1
+sub $v0,$t1 , $t0
+jr  $ra
+
+exit:
+li $v0, 10
+syscall

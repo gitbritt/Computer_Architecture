@@ -1,0 +1,397 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/DillonBritt/Documents/Counter_Lab_7/simulation/qsim
+Emips_alu
+Z1 w1491500392
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+R0
+Z9 8Counter.vho
+Z10 FCounter.vho
+l0
+L37
+VjM@mohKkE]5WK9ZN[Y[Rm0
+!s100 2m8]10S=b:>`]_>3ao3mo0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1491500394
+!i10b 1
+Z13 !s108 1491500394.000000
+Z14 !s90 -work|work|Counter.vho|
+Z15 !s107 Counter.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 8 mips_alu 0 22 jM@mohKkE]5WK9ZN[Y[Rm0
+l1456
+L157
+VZEjJSj?zFe0Y:T=?`7A:n3
+!s100 nE?jXRz6BD?TUg2QzXiQ<1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Emips_alu_vhd_vec_tst
+Z18 w1491500389
+R6
+R7
+R0
+Z19 8Waveform4.vwf.vht
+Z20 FWaveform4.vwf.vht
+l0
+L32
+V5WXXUccI1X;FiST;7EBUW2
+!s100 AhIGn]8[OTgeZ?^_B_E>j3
+R11
+32
+Z21 !s110 1491500395
+!i10b 1
+Z22 !s108 1491500395.000000
+Z23 !s90 -work|work|Waveform4.vwf.vht|
+Z24 !s107 Waveform4.vwf.vht|
+!i113 1
+R16
+R17
+Amips_alu_arch
+R6
+R7
+Z25 DEx4 work 20 mips_alu_vhd_vec_tst 0 22 5WXXUccI1X;FiST;7EBUW2
+l53
+L34
+VV7Vgn8XgMU7O15Ki[ak2L1
+!s100 @[FgfP>BdzNdEg1eeIoce0
+R11
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R16
+R17
+Emips_control
+Z26 w1490823060
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R0
+R9
+R10
+l0
+L37
+VJSP]j280Gmd0?;e][L;zN2
+!s100 ^kjgm8A`5cKkS1C8hL:o]2
+R11
+32
+Z27 !s110 1490823061
+!i10b 1
+Z28 !s108 1490823060.000000
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 12 mips_control 0 22 JSP]j280Gmd0?;e][L;zN2
+l250
+L90
+VSgz^fob?o]=KDWTHIB@iM2
+!s100 nF106aS50>DZjZlLAUgk[0
+R11
+32
+R27
+!i10b 1
+R28
+R14
+R15
+!i113 1
+R16
+R17
+Emips_control_vhd_vec_tst
+Z29 w1490823058
+R6
+R7
+R0
+Z30 8Waveform1.vwf.vht
+Z31 FWaveform1.vwf.vht
+l0
+L32
+VhzFPfl0Nd@2TzKm7FTPTF2
+!s100 0U4DEQaQHMO@6Bfk[`o7H2
+R11
+32
+R27
+!i10b 1
+Z32 !s108 1490823061.000000
+Z33 !s90 -work|work|Waveform1.vwf.vht|
+Z34 !s107 Waveform1.vwf.vht|
+!i113 1
+R16
+R17
+Amips_control_arch
+R6
+R7
+DEx4 work 24 mips_control_vhd_vec_tst 0 22 hzFPfl0Nd@2TzKm7FTPTF2
+l69
+L34
+V<E_=a;_1j^YNRmJ2Kg<@M3
+!s100 9WUIH^0EcaP;;<nBWAIaW2
+R11
+32
+R27
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R16
+R17
+vmips_register_file
+Z35 !s110 1490908147
+!i10b 1
+!s100 c@UbPd1Dg0^H65hCW]1>63
+Ia>0Q7`5QbzWQ5ZPZK?4L00
+Z36 V`JN@9S9cnhjKRR_L]QIcM3
+Z37 dC:/Users/dillonbritt/Desktop/Counter_Lab_7/simulation/qsim
+w1490908146
+8Counter.vo
+FCounter.vo
+L0 32
+Z38 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1490908147.209000
+!s107 Counter.vo|
+!s90 -work|work|Counter.vo|
+!i113 1
+R16
+Emips_register_file_vhd_vec_tst
+Z39 w1490902950
+R6
+R7
+R0
+Z40 8Waveform2.vwf.vht
+Z41 FWaveform2.vwf.vht
+l0
+L32
+VVzAb>gE70hYl1Si52BRoz0
+!s100 LiV:^Q4lbU5:H`LKLc>cf1
+R11
+32
+Z42 !s110 1490902954
+!i10b 1
+Z43 !s108 1490902954.000000
+Z44 !s90 -work|work|Waveform2.vwf.vht|
+Z45 !s107 Waveform2.vwf.vht|
+!i113 1
+R16
+R17
+Amips_register_file_arch
+R6
+R7
+DEx4 work 30 mips_register_file_vhd_vec_tst 0 22 VzAb>gE70hYl1Si52BRoz0
+l59
+L34
+VOo;1_eW>R33He:=IJJ2TH0
+!s100 ezk9C?DE3D_H`ciU]b:ol2
+R11
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R16
+R17
+vmips_register_file_vlg_check_tst
+R35
+!i10b 1
+!s100 ANA`:`WmPgj9@8O1`VRF=3
+I=@lZ^CkU@RdgPl7dU:X;43
+R36
+R37
+Z46 w1490908143
+Z47 8Waveform2.vwf.vt
+Z48 FWaveform2.vwf.vt
+L0 70
+R38
+r1
+!s85 0
+31
+Z49 !s108 1490908147.598000
+Z50 !s107 Waveform2.vwf.vt|
+Z51 !s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R16
+vmips_register_file_vlg_sample_tst
+R35
+!i10b 1
+!s100 SD[C9Rb=k_R6nBHDdUD?g3
+IV_Ualb7AXZkXCVYPoEA@60
+R36
+R37
+R46
+R47
+R48
+L0 30
+R38
+r1
+!s85 0
+31
+R49
+R50
+R51
+!i113 1
+R16
+vmips_register_file_vlg_vec_tst
+R35
+!i10b 1
+!s100 [KTI8LEFH4z`4cKdh9dm]2
+I7hLRFUkLNn]<>bS:S?0jB0
+R36
+R37
+R46
+R47
+R48
+L0 1306
+R38
+r1
+!s85 0
+31
+R49
+R50
+R51
+!i113 1
+R16
+Eregister_file
+Z52 w1490832872
+R3
+R5
+R8
+R2
+Z53 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+R4
+R6
+R7
+Z54 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
+R0
+R9
+R10
+l0
+L39
+V_5ED@IaJVGIYWEAeORh>=0
+!s100 Jk[MB8=WjOYCQf;3ZZ]kP1
+R11
+32
+Z55 !s110 1490832873
+!i10b 1
+Z56 !s108 1490832873.000000
+R14
+R15
+!i113 1
+R16
+R17
+Astructure
+R3
+R5
+R8
+R2
+R53
+R4
+R6
+R7
+R54
+DEx4 work 13 register_file 0 22 _5ED@IaJVGIYWEAeORh>=0
+l633
+L261
+V6nB7z^@S]m4^4>HP01ffV2
+!s100 7YQGj_KK1=JXK@I_lz[Vm3
+R11
+32
+R55
+!i10b 1
+R56
+R14
+R15
+!i113 1
+R16
+R17
+Eregister_file_vhd_vec_tst
+Z57 w1490832870
+R6
+R7
+R0
+R40
+R41
+l0
+L32
+VK00f?:kJB3:KnNDk?cGzn2
+!s100 elaPeE<Wh7^]LDZc76QB:3
+R11
+32
+R55
+!i10b 1
+R56
+R44
+R45
+!i113 1
+R16
+R17
+Aregister_file_arch
+R6
+R7
+DEx4 work 25 register_file_vhd_vec_tst 0 22 K00f?:kJB3:KnNDk?cGzn2
+l57
+L34
+V15LYz>ke[NZi2Dk:Cm=<I1
+!s100 OiFMCJo^1QSzhZoED;HXV3
+R11
+32
+R55
+!i10b 1
+R56
+R44
+R45
+!i113 1
+R16
+R17

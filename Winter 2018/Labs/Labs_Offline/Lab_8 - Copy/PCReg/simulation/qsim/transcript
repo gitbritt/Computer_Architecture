@@ -1,0 +1,36 @@
+# do PCReg.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:51:53 on Mar 16,2017
+# vlog -work work PCReg.vo 
+# -- Compiling module PCReg
+# 
+# Top level modules:
+# 	PCReg
+# End time: 14:51:53 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:51:53 on Mar 16,2017
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module PCReg_vlg_sample_tst
+# -- Compiling module PCReg_vlg_check_tst
+# -- Compiling module PCReg_vlg_vec_tst
+# 
+# Top level modules:
+# 	PCReg_vlg_vec_tst
+# End time: 14:51:53 on Mar 16,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "PCReg.do" 
+# Start time: 14:51:53 on Mar 16,2017
+# Loading work.PCReg_vlg_vec_tst
+# Loading work.PCReg
+# Loading altera_ver.dffeas
+# Loading work.PCReg_vlg_sample_tst
+# Loading work.PCReg_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform1.vwf.vt(710)
+#    Time: 100 ns  Iteration: 0  Instance: /PCReg_vlg_vec_tst/tb_out
+# End time: 14:51:54 on Mar 16,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

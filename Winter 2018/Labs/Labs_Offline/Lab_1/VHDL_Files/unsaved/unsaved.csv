@@ -1,0 +1,32 @@
+# system info unsaved on 2018.01.22.22:40:00
+system_info:
+name,value
+DEVICE,5CGXFC7C7F23C8
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1516678794
+#
+#
+# Files generated for unsaved on 2018.01.22.22:40:00
+files:
+filepath,kind,attributes,module,is_top
+simulation/unsaved.vhd,VHDL,,unsaved,true
+simulation/submodules/unsaved_buttons.v,VERILOG,,unsaved_buttons,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+unsaved.buttons,unsaved_buttons
+unsaved.leds,unsaved_buttons
+unsaved.switches,unsaved_buttons
+unsaved.cpu,unsaved_cpu
+unsaved.ext_bus,unsaved_ext_bus
+unsaved.flash,unsaved_flash
+unsaved.jtag_uart_0,unsaved_jtag_uart_0
+unsaved.lcd_16207_0,unsaved_lcd_16207_0
+unsaved.sdram,unsaved_sdram
+unsaved.sram_0,unsaved_sram_0
+unsaved.timer_0,unsaved_timer_0
+unsaved.uart_0,unsaved_uart_0
+unsaved.mm_interconnect_0,unsaved_mm_interconnect_0
+unsaved.irq_mapper,unsaved_irq_mapper
+unsaved.rst_controller,altera_reset_controller

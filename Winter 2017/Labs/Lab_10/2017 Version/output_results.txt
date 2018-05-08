@@ -1,0 +1,4 @@
+Number of hits : 3263
+Number of misses : 1631
+Number of misses with write back : 4894
+Number of Memory accesses : 9788

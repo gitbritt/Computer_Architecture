@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Feb 12 09:36:00 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : rpds17
+Top-level Entity Name : rpds17
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 2128
+Total pins : 58
+Total virtual pins : 0
+Total block memory bits : 120,640
+Total DSP Blocks : 2
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

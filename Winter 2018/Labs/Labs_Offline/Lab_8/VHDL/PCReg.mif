@@ -1,0 +1,70 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0    :   20080005;
+	1    :   20090005;
+	2    :   01095021;
+	3    :   254B0005;
+	4    :   01094824;
+	5    :   312A000F;
+	6    :   01097022;
+	7    :   3C010000;
+	8    :   3421000A;
+	9    :   01017023;
+	10   :   2001000A;
+	11   :   102A0001;
+	12   :   0810000F;
+	[13..14]  :   00004020;
+	15   :   20010005;
+	16   :   102A0001;
+	17   :   08100015;
+	[18..19]  :   00004020;
+	20   :   2001000A;
+	21   :   102A0001;
+	22   :   08100019;
+	[23..24]  :   00004020;
+	25   :   20010005;
+	26   :   102A0001;
+	27   :   0810001E;
+	[28..29]  :   00004020;
+	30   :   010B602A;
+	31   :   0168602A;
+	32   :   296C0064;
+	33   :   296C0003;
+	34   :   0168682A;
+	35   :   010B682A;
+	36   :   0C100030;
+	37   :   00087040;
+	38   :   01C87004;
+	39   :   00087042;
+	40   :   01C87006;
+	41   :   AC0EFF9C;
+	42   :   8C0EFF9C;
+	43   :   01097025;
+	44   :   35CE000F;
+	45   :   3C08000A;
+	46   :   2402000A;
+	47   :   0000000C;
+	48   :   03E00008;
+	[49..127]  :   00000000;
+END;

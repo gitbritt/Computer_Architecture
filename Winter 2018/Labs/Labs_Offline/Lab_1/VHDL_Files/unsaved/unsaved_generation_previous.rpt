@@ -1,0 +1,231 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\DillonBritt\Documents\Labs - Offline\Lab 1\unsaved.qsys" --block-symbol-file --output-directory="C:\Users\DillonBritt\Documents\Labs - Offline\Lab 1\unsaved" --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Lab 1/unsaved.qsys
+Progress: Reading input file
+Progress: Adding buttons [altera_avalon_pio 17.1]
+Progress: Parameterizing module buttons
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_qsys 16.1]
+Progress: Parameterizing module cpu
+Progress: Adding ext_bus [altera_up_external_bus_to_avalon_bridge 17.1]
+Progress: Parameterizing module ext_bus
+Progress: Adding flash [altera_avalon_cf 17.1]
+Progress: Parameterizing module flash
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 17.1]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding sdram [altera_avalon_new_sdram_controller 17.1]
+Progress: Parameterizing module sdram
+Progress: Adding sram_0 [altera_up_avalon_sram 17.1]
+Progress: Parameterizing module sram_0
+Progress: Adding switches [altera_avalon_pio 17.1]
+Progress: Parameterizing module switches
+Progress: Adding timer_0 [altera_avalon_timer 17.1]
+Progress: Parameterizing module timer_0
+Progress: Adding uart_0 [altera_avalon_uart 17.1]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: unsaved.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: unsaved.cpu: Nios II Classic cores are no longer recommended for new projects
+Info: unsaved.flash: Altera Avalon Compact Flash will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: unsaved.lcd_16207_0: Altera Avalon LCD 16207 will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: unsaved.buttons: buttons.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.ext_bus: ext_bus.external_interface must be exported, or connected to a matching conduit.
+Warning: unsaved.flash: flash.external must be exported, or connected to a matching conduit.
+Warning: unsaved.lcd_16207_0: lcd_16207_0.external must be exported, or connected to a matching conduit.
+Warning: unsaved.leds: leds.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.sdram: sdram.wire must be exported, or connected to a matching conduit.
+Warning: unsaved.sram_0: sram_0.external_interface must be exported, or connected to a matching conduit.
+Warning: unsaved.switches: switches.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.uart_0: uart_0.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.flash: Interrupt sender flash.ide_irq is not connected to an interrupt receiver
+Warning: unsaved.flash: Interrupt sender flash.ctl_irq is not connected to an interrupt receiver
+Warning: unsaved.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Warning: unsaved.timer_0: Interrupt sender timer_0.irq is not connected to an interrupt receiver
+Warning: unsaved.uart_0: Interrupt sender uart_0.irq is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\DillonBritt\Documents\Labs - Offline\Lab 1\unsaved.qsys" --synthesis=VHDL --output-directory="C:\Users\DillonBritt\Documents\Labs - Offline\Lab 1\unsaved\synthesis" --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Lab 1/unsaved.qsys
+Progress: Reading input file
+Progress: Adding buttons [altera_avalon_pio 17.1]
+Progress: Parameterizing module buttons
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_qsys 16.1]
+Progress: Parameterizing module cpu
+Progress: Adding ext_bus [altera_up_external_bus_to_avalon_bridge 17.1]
+Progress: Parameterizing module ext_bus
+Progress: Adding flash [altera_avalon_cf 17.1]
+Progress: Parameterizing module flash
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 17.1]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding leds [altera_avalon_pio 17.1]
+Progress: Parameterizing module leds
+Progress: Adding sdram [altera_avalon_new_sdram_controller 17.1]
+Progress: Parameterizing module sdram
+Progress: Adding sram_0 [altera_up_avalon_sram 17.1]
+Progress: Parameterizing module sram_0
+Progress: Adding switches [altera_avalon_pio 17.1]
+Progress: Parameterizing module switches
+Progress: Adding timer_0 [altera_avalon_timer 17.1]
+Progress: Parameterizing module timer_0
+Progress: Adding uart_0 [altera_avalon_uart 17.1]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: unsaved.buttons: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: unsaved.cpu: Nios II Classic cores are no longer recommended for new projects
+Info: unsaved.flash: Altera Avalon Compact Flash will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: unsaved.lcd_16207_0: Altera Avalon LCD 16207 will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: unsaved.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: unsaved.buttons: buttons.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.ext_bus: ext_bus.external_interface must be exported, or connected to a matching conduit.
+Warning: unsaved.flash: flash.external must be exported, or connected to a matching conduit.
+Warning: unsaved.lcd_16207_0: lcd_16207_0.external must be exported, or connected to a matching conduit.
+Warning: unsaved.leds: leds.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.sdram: sdram.wire must be exported, or connected to a matching conduit.
+Warning: unsaved.sram_0: sram_0.external_interface must be exported, or connected to a matching conduit.
+Warning: unsaved.switches: switches.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.uart_0: uart_0.external_connection must be exported, or connected to a matching conduit.
+Warning: unsaved.flash: Interrupt sender flash.ide_irq is not connected to an interrupt receiver
+Warning: unsaved.flash: Interrupt sender flash.ctl_irq is not connected to an interrupt receiver
+Warning: unsaved.jtag_uart_0: Interrupt sender jtag_uart_0.irq is not connected to an interrupt receiver
+Warning: unsaved.timer_0: Interrupt sender timer_0.irq is not connected to an interrupt receiver
+Warning: unsaved.uart_0: Interrupt sender uart_0.irq is not connected to an interrupt receiver
+Info: unsaved: Generating unsaved "unsaved" for QUARTUS_SYNTH
+Info: buttons: Starting RTL generation for module 'unsaved_buttons'
+Info: buttons:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=unsaved_buttons --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0002_buttons_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0002_buttons_gen//unsaved_buttons_component_configuration.pl  --do_build_sim=0  ]
+Info: buttons: Done RTL generation for module 'unsaved_buttons'
+Info: buttons: "unsaved" instantiated altera_avalon_pio "buttons"
+Info: cpu: Starting RTL generation for module 'unsaved_cpu'
+Info: cpu:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/eperlcmd.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=unsaved_cpu --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0003_cpu_gen/ --quartus_bindir=C:/intelfpga_lite/17.1/quartus/bin64 --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0003_cpu_gen//unsaved_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.01.25 16:44:23 (*) Starting Nios II generation
+Info: cpu: # 2018.01.25 16:44:23 (*)   Checking for plaintext license.
+Info: cpu: # 2018.01.25 16:44:24 (*)   Couldn't query license setup in Quartus directory C:/intelfpga_lite/17.1/quartus/bin64
+Info: cpu: # 2018.01.25 16:44:24 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.01.25 16:44:24 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.01.25 16:44:24 (*)   Plaintext license not found.
+Info: cpu: # 2018.01.25 16:44:24 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.01.25 16:44:25 (*)   Couldn't query license setup in Quartus directory C:/intelfpga_lite/17.1/quartus/bin64
+Info: cpu: # 2018.01.25 16:44:25 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.01.25 16:44:25 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.01.25 16:44:25 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2018.01.25 16:44:25 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.01.25 16:44:25 (*)   Creating all objects for CPU
+Info: cpu: # 2018.01.25 16:44:26 (*)     Pipeline frontend
+Info: cpu: # 2018.01.25 16:44:27 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.01.25 16:44:29 (*)   Creating encrypted RTL
+Info: cpu: # 2018.01.25 16:44:30 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'unsaved_cpu'
+Info: cpu: "unsaved" instantiated altera_nios2_qsys "cpu"
+Info: ext_bus: Starting Generation of External Bus to Avalon Bridge
+Info: ext_bus: "unsaved" instantiated altera_up_external_bus_to_avalon_bridge "ext_bus"
+Info: flash: Starting RTL generation for module 'unsaved_flash'
+Info: flash:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_cf -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_cf/generate_rtl.pl --name=unsaved_flash --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0005_flash_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0005_flash_gen//unsaved_flash_component_configuration.pl  --do_build_sim=0  ]
+Info: flash: Done RTL generation for module 'unsaved_flash'
+Info: flash: "unsaved" instantiated altera_avalon_cf "flash"
+Info: jtag_uart_0: Starting RTL generation for module 'unsaved_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=unsaved_jtag_uart_0 --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0006_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0006_jtag_uart_0_gen//unsaved_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'unsaved_jtag_uart_0'
+Info: jtag_uart_0: "unsaved" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: lcd_16207_0: Starting RTL generation for module 'unsaved_lcd_16207_0'
+Info: lcd_16207_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=unsaved_lcd_16207_0 --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0007_lcd_16207_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0007_lcd_16207_0_gen//unsaved_lcd_16207_0_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd_16207_0: Done RTL generation for module 'unsaved_lcd_16207_0'
+Info: lcd_16207_0: "unsaved" instantiated altera_avalon_lcd_16207 "lcd_16207_0"
+Info: leds: Starting RTL generation for module 'unsaved_leds'
+Info: leds:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=unsaved_leds --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0008_leds_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0008_leds_gen//unsaved_leds_component_configuration.pl  --do_build_sim=0  ]
+Info: leds: Done RTL generation for module 'unsaved_leds'
+Info: leds: "unsaved" instantiated altera_avalon_pio "leds"
+Info: sdram: Starting RTL generation for module 'unsaved_sdram'
+Info: sdram:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=unsaved_sdram --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0009_sdram_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0009_sdram_gen//unsaved_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'unsaved_sdram'
+Info: sdram: "unsaved" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sram_0: Starting Generation of the SRAM Controller
+Info: sram_0: "unsaved" instantiated altera_up_avalon_sram "sram_0"
+Info: timer_0: Starting RTL generation for module 'unsaved_timer_0'
+Info: timer_0:   Generation command is [exec C:/intelFPGA_lite/17.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/17.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=unsaved_timer_0 --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0011_timer_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0011_timer_0_gen//unsaved_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'unsaved_timer_0'
+Info: timer_0: "unsaved" instantiated altera_avalon_timer "timer_0"
+Info: uart_0: Starting RTL generation for module 'unsaved_uart_0'
+Info: uart_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=unsaved_uart_0 --dir=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0012_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/DILLON~1/AppData/Local/Temp/alt7556_5924463507994340775.dir/0012_uart_0_gen//unsaved_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0: Done RTL generation for module 'unsaved_uart_0'
+Info: uart_0: "unsaved" instantiated altera_avalon_uart "uart_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "unsaved" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "unsaved" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "unsaved" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "unsaved" instantiated altera_reset_controller "rst_controller"
+Info: ext_bus_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "ext_bus_avalon_master_translator"
+Info: flash_ctl_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "flash_ctl_translator"
+Info: ext_bus_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "ext_bus_avalon_master_agent"
+Info: flash_ctl_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "flash_ctl_agent"
+Info: flash_ctl_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "flash_ctl_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: flash_ctl_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "flash_ctl_cmd_width_adapter"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_1" instantiated altera_merlin_router "router_003"
+Info: router_010: "mm_interconnect_1" instantiated altera_merlin_router "router_010"
+Info: router_011: "mm_interconnect_1" instantiated altera_merlin_router "router_011"
+Info: cpu_instruction_master_limiter: "mm_interconnect_1" instantiated altera_merlin_traffic_limiter "cpu_instruction_master_limiter"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sram_0_avalon_sram_slave_burst_adapter: "mm_interconnect_1" instantiated altera_merlin_burst_adapter "sram_0_avalon_sram_slave_burst_adapter"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_001: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/DillonBritt/Documents/Labs - Offline/Lab 1/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter_001: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: unsaved: Done "unsaved" with 48 modules, 74 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

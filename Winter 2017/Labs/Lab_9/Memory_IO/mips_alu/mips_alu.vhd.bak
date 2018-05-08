@@ -1,0 +1,56 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.STD_LOGIC_ARITH.all;
+USE ieee.STD_LOGIC_UNSIGNED.all;
+
+ENTITY mips_alu IS
+	PORT (ALUControl		: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+			inputA, inputB : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+			shamt				: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+			Zero				: OUT STD_LOGIC;
+			ALU_Result		: OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+			);
+END mips_alu;
+
+ARCHITECTURE Behavior OF mips_alu IS
+
+BEGIN
+
+PROCESS(ALUControl, shamt)
+	BEGIN 
+		IF (ALUControl = "0000") THEN 
+			Zero <= '0';
+			ALU_Result <= inputA AND inputB;
+			
+		ELSIF (ALUControl = "0001") THEN
+			Zero <= '0';
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "0010") THEN
+			Zero <= '0';
+			ALU_Result <= inputA + inputB;
+			
+		ELSIF (ALUControl = "0110") THEN
+			Zero <= '0';
+			ALU_Result <= inputA - inputB;
+			
+		ELSIF (ALUControl = "0111") THEN
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "1000") THEN
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "1001") THEN
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "1010") THEN
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "1011") THEN
+			ALU_Result <= inputA OR inputB;
+			
+		ELSIF (ALUControl = "1100") THEN
+			ALU_Result <= inputA NOR inputB;
+			
+		ELSIF (ALUControl = "1101") THEN
+			ALU_Result <= inputA LUI inputB;	

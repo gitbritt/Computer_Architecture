@@ -1,0 +1,24 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.flash -pg 1 -lvl 2 -y 390
+preplace inst unsaved.uart_0 -pg 1 -lvl 2 -y 1150
+preplace inst unsaved.timer_0 -pg 1 -lvl 2 -y 1050
+preplace inst unsaved.buttons -pg 1 -lvl 2 -y 190
+preplace inst unsaved.lcd_16207_0 -pg 1 -lvl 2 -y 650
+preplace inst unsaved.jtag_uart_0 -pg 1 -lvl 2 -y 550
+preplace inst unsaved.ext_bus -pg 1 -lvl 2 -y 290
+preplace inst unsaved.cpu -pg 1 -lvl 2 -y 30
+preplace inst unsaved.sdram -pg 1 -lvl 2 -y 850
+preplace inst unsaved.sram_0 -pg 1 -lvl 2 -y 950
+preplace inst unsaved.leds -pg 1 -lvl 2 -y 750
+preplace inst unsaved.switches -pg 1 -lvl 2 -y 1270
+preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>unsaved</net_container>(MASTER)cpu.jtag_debug_module_reset,(SLAVE)clk_0.clk_in_reset) 1 0 3 60 160 NJ 160 580
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)uart_0.reset,(SLAVE)cpu.reset_n,(SLAVE)lcd_16207_0.reset,(SLAVE)buttons.reset,(SLAVE)sram_0.reset,(SLAVE)ext_bus.reset,(SLAVE)leds.reset,(SLAVE)switches.reset,(SLAVE)sdram.reset,(SLAVE)jtag_uart_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)flash.reset,(SLAVE)timer_0.reset) 1 1 1 260
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)flash.ide,(SLAVE)flash.ctl,(MASTER)ext_bus.avalon_master) 1 1 2 320 380 580
+preplace netloc INTERCONNECT<net_container>unsaved</net_container>(MASTER)cpu.data_master,(SLAVE)switches.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)sram_0.avalon_sram_slave,(SLAVE)timer_0.s1,(SLAVE)lcd_16207_0.control_slave,(SLAVE)buttons.s1,(SLAVE)leds.s1,(SLAVE)cpu.jtag_debug_module,(MASTER)cpu.instruction_master,(SLAVE)sdram.s1,(SLAVE)uart_0.s1) 1 1 2 300 180 600
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)jtag_uart_0.clk,(SLAVE)lcd_16207_0.clk,(SLAVE)flash.clk,(SLAVE)cpu.clk,(SLAVE)leds.clk,(SLAVE)switches.clk,(SLAVE)sdram.clk,(SLAVE)uart_0.clk,(SLAVE)timer_0.clk,(MASTER)clk_0.clk,(SLAVE)ext_bus.clk,(SLAVE)buttons.clk,(SLAVE)sram_0.clk) 1 1 1 280
+levelinfo -pg 1 0 30 640
+levelinfo -hier unsaved 40 90 350 620

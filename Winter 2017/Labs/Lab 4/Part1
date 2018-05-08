@@ -1,0 +1,16 @@
+#Dillon Britt
+#For Sum part 1
+.globl main
+
+ main:
+
+addi $s0, $zero, 0 # int i = 0
+addi $s1, $zero, 0 # int sum = 0
+
+loop:
+	bge $s0,10,exit #for(i; i< 10; 
+	add $s1, $s1, $s0
+	addi $s0,$s0,1 # i++)
+   j loop  
+
+exit:
