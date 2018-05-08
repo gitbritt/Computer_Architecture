@@ -1,0 +1,775 @@
+Analysis & Synthesis report for Lab_8
+Sun Apr 29 11:24:35 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Source assignments for data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated
+ 14. Source assignments for ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated
+ 15. Parameter Settings for User Entity Instance: data_memory_module:DATAMEMM|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: ROM1PORT:PCREGDATA|altsyncram:altsyncram_component
+ 17. altsyncram Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "mips_control:CONTROL"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Apr 29 11:24:35 2018       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; Lab_8                                       ;
+; Top-level Entity Name           ; mips                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 1056                                        ;
+; Total pins                      ; 178                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 2,048                                       ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; mips               ; Lab_8              ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
+; PCReg.mif                        ; yes             ; User Memory Initialization File  ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/PCReg.mif              ;         ;
+; ROM1PORT.vhd                     ; yes             ; User Wizard-Generated File       ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/ROM1PORT.vhd           ;         ;
+; mips_register_file.vhd           ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_register_file.vhd ;         ;
+; mips_control.vhd                 ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd       ;         ;
+; mips_alu.vhd                     ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_alu.vhd           ;         ;
+; data_memory_module.vhd           ; yes             ; User Wizard-Generated File       ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd ;         ;
+; signExtImm.vhd                   ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/signExtImm.vhd         ;         ;
+; mips.vhd                         ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd               ;         ;
+; PCReg.vhd                        ; yes             ; User VHDL File                   ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/PCReg.vhd              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf              ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc       ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                 ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc               ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                  ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                  ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                ;         ;
+; db/altsyncram_2504.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf ;         ;
+; db/altsyncram_1024.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf ;         ;
++----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1788                        ;
+;                                             ;                             ;
+; Combinational ALUT usage for logic          ; 1539                        ;
+;     -- 7 input functions                    ; 26                          ;
+;     -- 6 input functions                    ; 1017                        ;
+;     -- 5 input functions                    ; 206                         ;
+;     -- 4 input functions                    ; 75                          ;
+;     -- <=3 input functions                  ; 215                         ;
+;                                             ;                             ;
+; Dedicated logic registers                   ; 1056                        ;
+;                                             ;                             ;
+; I/O pins                                    ; 178                         ;
+; Total MLAB memory bits                      ; 0                           ;
+; Total block memory bits                     ; 2048                        ;
+;                                             ;                             ;
+; Total DSP Blocks                            ; 0                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; mips_control:CONTROL|Mux6~1 ;
+; Maximum fan-out                             ; 1061                        ;
+; Total fan-out                               ; 15031                       ;
+; Average fan-out                             ; 5.04                        ;
++---------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name        ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------+--------------+
+; |mips                                     ; 1539 (520)          ; 1056 (0)                  ; 2048              ; 0          ; 178  ; 0            ; |mips                                                                                   ; mips               ; work         ;
+;    |PCReg:PC|                             ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |mips|PCReg:PC                                                                          ; PCReg              ; work         ;
+;    |ROM1PORT:PCREGDATA|                   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |mips|ROM1PORT:PCREGDATA                                                                ; ROM1PORT           ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |mips|ROM1PORT:PCREGDATA|altsyncram:altsyncram_component                                ; altsyncram         ; work         ;
+;          |altsyncram_1024:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |mips|ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated ; altsyncram_1024    ; work         ;
+;    |mips_alu:ALU|                         ; 601 (601)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips|mips_alu:ALU                                                                      ; mips_alu           ; work         ;
+;    |mips_control:CONTROL|                 ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mips|mips_control:CONTROL                                                              ; mips_control       ; work         ;
+;    |mips_register_file:REGFILE|           ; 385 (385)           ; 1024 (1024)               ; 0                 ; 0          ; 0    ; 0            ; |mips|mips_register_file:REGFILE                                                        ; mips_register_file ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                          ;
++----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; Name                                                                                         ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF       ;
++----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+; ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 64           ; 32           ; --           ; --           ; 2048 ; PCReg.mif ;
++----------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                     ;
++----------------------------------------------------+---------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal       ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------------+------------------------+
+; mips_control:CONTROL|ALUControl[3]                 ; mips_control:CONTROL|Mux5 ; yes                    ;
+; mips_control:CONTROL|ALUControl[1]                 ; mips_control:CONTROL|Mux5 ; yes                    ;
+; mips_control:CONTROL|ALUControl[0]                 ; mips_control:CONTROL|Mux5 ; yes                    ;
+; mips_control:CONTROL|ALUControl[2]                 ; mips_control:CONTROL|Mux5 ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                           ;                        ;
++----------------------------------------------------+---------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1056  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1024  ;
+; Number of registers using Asynchronous Clear ; 1056  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1026  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; PCReg:PC|PC[22]                        ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |mips|PCReg:PC|PC[1]                  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |mips|PCReg:PC|PC[30]                 ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |mips|PCReg:PC|PC[2]                  ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft0         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft0         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft0         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftRight0        ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft0         ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft1         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft1         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftLeft1         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftRight1        ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |mips|mips_alu:ALU|ShiftRight1        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |mips|writeReg[0]                     ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |mips|mips_register_file:REGFILE|Mux0 ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |mips|inputALU[15]                    ;
+; 64:1               ; 3 bits    ; 126 LEs       ; 36 LEs               ; 90 LEs                 ; No         ; |mips|mips_control:CONTROL|Mux12      ;
+; 28:1               ; 11 bits   ; 198 LEs       ; 176 LEs              ; 22 LEs                 ; No         ; |mips|mips_alu:ALU|Mux18              ;
+; 24:1               ; 12 bits   ; 192 LEs       ; 168 LEs              ; 24 LEs                 ; No         ; |mips|mips_alu:ALU|Mux9               ;
+; 34:1               ; 3 bits    ; 66 LEs        ; 51 LEs               ; 15 LEs                 ; No         ; |mips|mips_alu:ALU|Mux28              ;
+; 30:1               ; 3 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |mips|mips_alu:ALU|Mux1               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Source assignments for data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                  ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                   ;
++---------------------------------+--------------------+------+-----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory_module:DATAMEMM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                         ;
++------------------------------------+----------------------+----------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                      ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                      ;
+; WIDTH_A                            ; 32                   ; Signed Integer                               ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                               ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                               ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                      ;
+; WIDTH_B                            ; 1                    ; Signed Integer                               ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                               ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                               ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                               ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                      ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                      ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                               ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                               ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                      ;
+; CBXI_PARAMETER                     ; altsyncram_2504      ; Untyped                                      ;
++------------------------------------+----------------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROM1PORT:PCREGDATA|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------+
+; Parameter Name                     ; Value                ; Type                                ;
++------------------------------------+----------------------+-------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                             ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                             ;
+; WIDTH_A                            ; 32                   ; Signed Integer                      ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                      ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WIDTH_B                            ; 1                    ; Signed Integer                      ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                      ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                             ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; INIT_FILE                          ; PCReg.mif            ; Untyped                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                      ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_1024      ; Untyped                             ;
++------------------------------------+----------------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                        ;
++-------------------------------------------+-------------------------------------------------------------+
+; Name                                      ; Value                                                       ;
++-------------------------------------------+-------------------------------------------------------------+
+; Number of entity instances                ; 2                                                           ;
+; Entity Instance                           ; data_memory_module:DATAMEMM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                 ;
+;     -- WIDTH_A                            ; 32                                                          ;
+;     -- NUMWORDS_A                         ; 32                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                ;
+;     -- WIDTH_B                            ; 1                                                           ;
+;     -- NUMWORDS_B                         ; 0                                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                   ;
+; Entity Instance                           ; ROM1PORT:PCREGDATA|altsyncram:altsyncram_component          ;
+;     -- OPERATION_MODE                     ; ROM                                                         ;
+;     -- WIDTH_A                            ; 32                                                          ;
+;     -- NUMWORDS_A                         ; 64                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                ;
+;     -- WIDTH_B                            ; 1                                                           ;
+;     -- NUMWORDS_B                         ; 0                                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                   ;
++-------------------------------------------+-------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mips_control:CONTROL"                                                                  ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; memread ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 1056                        ;
+;     CLR               ; 30                          ;
+;     ENA CLR           ; 2                           ;
+;     ENA CLR SLD       ; 1024                        ;
+; arriav_lcell_comb     ; 1540                        ;
+;     arith             ; 93                          ;
+;         1 data inputs ; 31                          ;
+;         2 data inputs ; 30                          ;
+;         5 data inputs ; 32                          ;
+;     extend            ; 26                          ;
+;         7 data inputs ; 26                          ;
+;     normal            ; 1421                        ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 45                          ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 75                          ;
+;         5 data inputs ; 174                         ;
+;         6 data inputs ; 1017                        ;
+; boundary_port         ; 178                         ;
+; stratixv_ram_block    ; 32                          ;
+;                       ;                             ;
+; Max LUT depth         ; 12.00                       ;
+; Average LUT depth     ; 11.03                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:19     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Sun Apr 29 11:23:55 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_8 -c Lab_8
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file filestuff.vhd
+    Info (12022): Found design unit 1: filestuff-SYN File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/filestuff.vhd Line: 54
+    Info (12023): Found entity 1: filestuff File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/filestuff.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file rom1port.vhd
+    Info (12022): Found design unit 1: rom1port-SYN File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/ROM1PORT.vhd Line: 52
+    Info (12023): Found entity 1: ROM1PORT File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/ROM1PORT.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file register_file.vhd
+    Info (12022): Found design unit 1: register_file-behavioral File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/register_file.vhd Line: 21
+    Info (12023): Found entity 1: register_file File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/register_file.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mips_register_file.vhd
+    Info (12022): Found design unit 1: mips_register_file-arch File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_register_file.vhd Line: 16
+    Info (12023): Found entity 1: mips_register_file File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_register_file.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mips_control.vhd
+    Info (12022): Found design unit 1: mips_control-Behavioral File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 18
+    Info (12023): Found entity 1: mips_control File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mips_alu.vhd
+    Info (12022): Found design unit 1: mips_alu-arch File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_alu.vhd Line: 17
+    Info (12023): Found entity 1: mips_alu File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_alu.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: Counter-Behavioral File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/Counter.vhd Line: 13
+    Info (12023): Found entity 1: Counter File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/Counter.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory_module.vhd
+    Info (12022): Found design unit 1: data_memory_module-SYN File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd Line: 54
+    Info (12023): Found entity 1: data_memory_module File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file signextimm.vhd
+    Info (12022): Found design unit 1: signExtImm-arch File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/signExtImm.vhd Line: 14
+    Info (12023): Found entity 1: signExtImm File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/signExtImm.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mips.vhd
+    Info (12022): Found design unit 1: mips-behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 21
+    Info (12023): Found entity 1: mips File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file pcreg.vhd
+    Info (12022): Found design unit 1: PCReg-Behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/PCReg.vhd Line: 14
+    Info (12023): Found entity 1: PCReg File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/PCReg.vhd Line: 6
+Info (12127): Elaborating entity "mips" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at mips.vhd(99): object "MEM_Read" assigned a value but never read File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 99
+Info (12128): Elaborating entity "PCReg" for hierarchy "PCReg:PC" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 111
+Info (12128): Elaborating entity "mips_control" for hierarchy "mips_control:CONTROL" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 112
+Warning (10631): VHDL Process Statement warning at mips_control.vhd(20): inferring latch(es) for signal or variable "ALUControl", which holds its previous value in one or more paths through the process File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+Info (10041): Inferred latch for "ALUControl[0]" at mips_control.vhd(20) File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+Info (10041): Inferred latch for "ALUControl[1]" at mips_control.vhd(20) File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+Info (10041): Inferred latch for "ALUControl[2]" at mips_control.vhd(20) File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+Info (10041): Inferred latch for "ALUControl[3]" at mips_control.vhd(20) File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+Info (12128): Elaborating entity "mips_register_file" for hierarchy "mips_register_file:REGFILE" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 115
+Info (12128): Elaborating entity "mips_alu" for hierarchy "mips_alu:ALU" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 118
+Info (12128): Elaborating entity "signExtImm" for hierarchy "signExtImm:EXTIMM" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 121
+Info (12128): Elaborating entity "data_memory_module" for hierarchy "data_memory_module:DATAMEMM" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 122
+Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memory_module:DATAMEMM|altsyncram:altsyncram_component" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "data_memory_module:DATAMEMM|altsyncram:altsyncram_component" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd Line: 61
+Info (12133): Instantiated megafunction "data_memory_module:DATAMEMM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/data_memory_module.vhd Line: 61
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "UNUSED"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "32"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "5"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2504.tdf
+    Info (12023): Found entity 1: altsyncram_2504 File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_2504" for hierarchy "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ROM1PORT" for hierarchy "ROM1PORT:PCREGDATA" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips.vhd Line: 123
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM1PORT:PCREGDATA|altsyncram:altsyncram_component" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/rom1port.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "ROM1PORT:PCREGDATA|altsyncram:altsyncram_component" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/rom1port.vhd Line: 59
+Info (12133): Instantiated megafunction "ROM1PORT:PCREGDATA|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/rom1port.vhd Line: 59
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "PCReg.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "64"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "6"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1024.tdf
+    Info (12023): Found entity 1: altsyncram_1024 File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_1024" for hierarchy "ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[0]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 36
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[1]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 58
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[2]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 80
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[3]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 102
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[4]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 124
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[5]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 146
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[6]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 168
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[7]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 190
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[8]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 212
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[9]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 234
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[10]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 256
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[11]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 278
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[12]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 300
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[13]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 322
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[14]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 344
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[15]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 366
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[16]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 388
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[17]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 410
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[18]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 432
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[19]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 454
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[20]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 476
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[21]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 498
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[22]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 520
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[23]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 542
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[24]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 564
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[25]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 586
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[26]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 608
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[27]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 630
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[28]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 652
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[29]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 674
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[30]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 696
+        Warning (14320): Synthesized away node "data_memory_module:DATAMEMM|altsyncram:altsyncram_component|altsyncram_2504:auto_generated|q_a[31]" File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_2504.tdf Line: 718
+Warning (13012): Latch mips_control:CONTROL|ALUControl[3] has unsafe behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|q_a[3] File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf Line: 31
+Warning (13012): Latch mips_control:CONTROL|ALUControl[1] has unsafe behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|q_a[30] File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf Line: 31
+Warning (13012): Latch mips_control:CONTROL|ALUControl[0] has unsafe behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|q_a[30] File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf Line: 31
+Warning (13012): Latch mips_control:CONTROL|ALUControl[2] has unsafe behavior File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/mips_control.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM1PORT:PCREGDATA|altsyncram:altsyncram_component|altsyncram_1024:auto_generated|q_a[30] File: C:/Users/DillonBritt/Documents/Labs_Offline/Lab_8/VHDL_Code/db/altsyncram_1024.tdf Line: 31
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2773 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 175 output pins
+    Info (21061): Implemented 2563 logic cells
+    Info (21064): Implemented 32 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 816 megabytes
+    Info: Processing ended: Sun Apr 29 11:24:35 2018
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:00:57
+
+

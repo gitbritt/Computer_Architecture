@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Next_count[31]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

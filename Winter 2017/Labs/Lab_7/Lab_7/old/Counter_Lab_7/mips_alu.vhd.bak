@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+USE ieee.STD_LOGIC_arith.all;
+use ieee.STD_LOGIC_unsigned.all;
+
+ENTITY mips_alu IS
+PORT(
+ALUControl		: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+inputA, inputB	: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+shamt				: IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+Zero				: IN STD_LOGIC;
+ALU_Result		: OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
+END mips_alu;
